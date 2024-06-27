@@ -1,4 +1,4 @@
-name: autofix.ci  # needed to securely identify the workflow
+name: autofix-action  # needed to securely identify the workflow
 
 on:
   pull_request:
@@ -19,4 +19,4 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - uses: khulnasoft/autofix-action
+      - uses: khulnasoft/autofix-action@main
